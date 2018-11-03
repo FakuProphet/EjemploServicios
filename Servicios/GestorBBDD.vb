@@ -10,7 +10,7 @@ Public Class GestorBBDD
     Dim dReader As OleDbDataReader
     Dim dTable As DataTable
     'Es privada porque solo hacemos uso interno, solo dentro del ambiente de la clase
-    Private cadenaDeConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Prophet\Desktop\clon Servicios\EjemploServicios\Database2.accdb"
+    Private cadenaDeConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Prophet\Desktop\clon Servicios\EjemploServicios\Concesionaria.accdb"
 
 
 
@@ -69,7 +69,7 @@ Public Class GestorBBDD
             dTable = New DataTable
             'cargamos el datatable con una consulta a una tabla
             'usando el metodo creado en la clase
-            dTable = consutarTabla("tabla")
+            dTable = consutarTabla("vehiculos")
             'El origen de datos del combo box, le decimos que sera
             'con lo recolectado en el datatable
             miCombo.DataSource = dTable
