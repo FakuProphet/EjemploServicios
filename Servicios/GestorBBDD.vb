@@ -65,9 +65,25 @@ Public Class GestorBBDD
 
     Public Sub cargarCombo(ByVal miCombo As ComboBox)
         Try
-
+            'instanciar una clase datatable
+            dTable = New DataTable
+            'cargamos el datatable con una consulta a una tabla
+            'usando el metodo creado en la clase
+            dTable = consutarTabla("tabla")
+            'El origen de datos del combo box, le decimos que sera
+            'con lo recolectado en el datatable
+            miCombo.DataSource = dTable
+            'le indicamos que el value member de cada item del combo
+            'sera el id o clave primaria que arrastre de cada registro de 
+            'la tabla indicada en el metodo consultar tabla
+            'este es el valor que se va a guardar, cuando se haya seleccionado
+            'un item del combobox
+            miCombo.ValueMember = dTable.Columns(0).ColumnName
+            'Indicamos que en pantalla se va a mostrar la descripcion 
+            'de cada registro
+            miCombo.DisplayMember = dTable.Columns(1).ColumnName
         Catch ex As Exception
-            MessageBox.Show(ex.Message, "Metodo CargarComboDesdeSql", MessageBoxButtons.OK)
+            MessageBox.Show("Error: " + ex.ToString)
         Finally
             conexion.Close()
         End Try
