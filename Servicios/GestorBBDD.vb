@@ -28,7 +28,7 @@ Public Class GestorBBDD
             'Especifica como se interpretra una cadena de comando
             comando.CommandType = CommandType.Text
 
-            MessageBox.Show("Conexión exitosa...")
+            '  MessageBox.Show("Conexión exitosa...")
         Catch ex As Exception
             MessageBox.Show("Error en la conexión: " + ex.ToString)
         End Try
@@ -40,7 +40,7 @@ Public Class GestorBBDD
             'cierro a conexion actual y libero recursos
             conexion.Close()
             conexion.Dispose()
-            MessageBox.Show("Conexión cerrada exitosamente...")
+            '  MessageBox.Show("Conexión cerrada exitosamente...")
         Catch ex As Exception
             MessageBox.Show("Error al cerrar la conexión: " + ex.ToString)
         End Try

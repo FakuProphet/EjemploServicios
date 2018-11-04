@@ -26,4 +26,10 @@
 
 
     End Sub
+
+    Private Sub btnFormNuevoCliente_Click(sender As Object, e As EventArgs) Handles btnFormNuevoCliente.Click
+        Dim formAgregarCliente As Form2 = New Form2
+        formAgregarCliente.ShowDialog()
+        'mostrar el form en forma modal.
+    End Sub
 End Class

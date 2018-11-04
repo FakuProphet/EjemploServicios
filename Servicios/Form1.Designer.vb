@@ -33,6 +33,7 @@ Partial Class Form1
         Me.cboClientes = New System.Windows.Forms.ComboBox()
         Me.btnFormNuevoCliente = New System.Windows.Forms.Button()
         Me.btnRegistrar = New System.Windows.Forms.Button()
+        Me.btnActualizar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'cboTipoVehiculo
@@ -88,7 +89,7 @@ Partial Class Form1
         '
         Me.txtHora.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHora.Enabled = False
-        Me.txtHora.Location = New System.Drawing.Point(95, 289)
+        Me.txtHora.Location = New System.Drawing.Point(39, 31)
         Me.txtHora.Name = "txtHora"
         Me.txtHora.ReadOnly = True
         Me.txtHora.Size = New System.Drawing.Size(72, 13)
@@ -98,7 +99,7 @@ Partial Class Form1
         '
         Me.txtFecha.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFecha.Enabled = False
-        Me.txtFecha.Location = New System.Drawing.Point(17, 289)
+        Me.txtFecha.Location = New System.Drawing.Point(39, 12)
         Me.txtFecha.Name = "txtFecha"
         Me.txtFecha.ReadOnly = True
         Me.txtFecha.Size = New System.Drawing.Size(72, 13)
@@ -124,27 +125,37 @@ Partial Class Form1
         '
         'btnFormNuevoCliente
         '
-        Me.btnFormNuevoCliente.Location = New System.Drawing.Point(347, 81)
+        Me.btnFormNuevoCliente.Location = New System.Drawing.Point(95, 226)
         Me.btnFormNuevoCliente.Name = "btnFormNuevoCliente"
-        Me.btnFormNuevoCliente.Size = New System.Drawing.Size(32, 23)
+        Me.btnFormNuevoCliente.Size = New System.Drawing.Size(138, 23)
         Me.btnFormNuevoCliente.TabIndex = 11
-        Me.btnFormNuevoCliente.Text = "..."
+        Me.btnFormNuevoCliente.Text = "&Nuevo Cliente"
         Me.btnFormNuevoCliente.UseVisualStyleBackColor = True
         '
         'btnRegistrar
         '
-        Me.btnRegistrar.Location = New System.Drawing.Point(288, 262)
+        Me.btnRegistrar.Location = New System.Drawing.Point(250, 226)
         Me.btnRegistrar.Name = "btnRegistrar"
         Me.btnRegistrar.Size = New System.Drawing.Size(91, 23)
         Me.btnRegistrar.TabIndex = 12
         Me.btnRegistrar.Text = "&Registrar"
         Me.btnRegistrar.UseVisualStyleBackColor = True
         '
+        'btnActualizar
+        '
+        Me.btnActualizar.Location = New System.Drawing.Point(347, 81)
+        Me.btnActualizar.Name = "btnActualizar"
+        Me.btnActualizar.Size = New System.Drawing.Size(72, 23)
+        Me.btnActualizar.TabIndex = 13
+        Me.btnActualizar.Text = "&Actualizar"
+        Me.btnActualizar.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(422, 314)
+        Me.ClientSize = New System.Drawing.Size(431, 281)
+        Me.Controls.Add(Me.btnActualizar)
         Me.Controls.Add(Me.btnRegistrar)
         Me.Controls.Add(Me.btnFormNuevoCliente)
         Me.Controls.Add(Me.cboClientes)
@@ -177,4 +188,5 @@ Partial Class Form1
     Friend WithEvents cboClientes As ComboBox
     Friend WithEvents btnFormNuevoCliente As Button
     Friend WithEvents btnRegistrar As Button
+    Friend WithEvents btnActualizar As Button
 End Class
