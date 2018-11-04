@@ -63,13 +63,13 @@ Public Class GestorBBDD
         Return dTable
     End Function
 
-    Public Sub cargarCombo(ByVal miCombo As ComboBox)
+    Public Sub cargarCombo(ByVal miCombo As ComboBox, ByVal tabla As String)
         Try
             'instanciar una clase datatable
             dTable = New DataTable
             'cargamos el datatable con una consulta a una tabla
             'usando el metodo creado en la clase
-            dTable = consutarTabla("vehiculos")
+            dTable = consutarTabla(tabla)
             'El origen de datos del combo box, le decimos que sera
             'con lo recolectado en el datatable
             miCombo.DataSource = dTable

@@ -30,7 +30,7 @@ Partial Class Form1
         Me.txtHora = New System.Windows.Forms.TextBox()
         Me.txtFecha = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cboClientes = New System.Windows.Forms.ComboBox()
         Me.btnFormNuevoCliente = New System.Windows.Forms.Button()
         Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
@@ -87,7 +87,7 @@ Partial Class Form1
         'txtHora
         '
         Me.txtHora.Enabled = False
-        Me.txtHora.Location = New System.Drawing.Point(307, 12)
+        Me.txtHora.Location = New System.Drawing.Point(307, 38)
         Me.txtHora.Name = "txtHora"
         Me.txtHora.ReadOnly = True
         Me.txtHora.Size = New System.Drawing.Size(72, 20)
@@ -96,7 +96,7 @@ Partial Class Form1
         'txtFecha
         '
         Me.txtFecha.Enabled = False
-        Me.txtFecha.Location = New System.Drawing.Point(229, 12)
+        Me.txtFecha.Location = New System.Drawing.Point(307, 12)
         Me.txtFecha.Name = "txtFecha"
         Me.txtFecha.ReadOnly = True
         Me.txtFecha.Size = New System.Drawing.Size(72, 20)
@@ -111,14 +111,14 @@ Partial Class Form1
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Cliente"
         '
-        'ComboBox1
+        'cboClientes
         '
-        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(167, 82)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(174, 21)
-        Me.ComboBox1.TabIndex = 10
+        Me.cboClientes.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboClientes.FormattingEnabled = True
+        Me.cboClientes.Location = New System.Drawing.Point(167, 82)
+        Me.cboClientes.Name = "cboClientes"
+        Me.cboClientes.Size = New System.Drawing.Size(174, 21)
+        Me.cboClientes.TabIndex = 10
         '
         'btnFormNuevoCliente
         '
@@ -145,7 +145,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(422, 314)
         Me.Controls.Add(Me.btnRegistrar)
         Me.Controls.Add(Me.btnFormNuevoCliente)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cboClientes)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtFecha)
         Me.Controls.Add(Me.txtHora)
@@ -172,7 +172,7 @@ Partial Class Form1
     Friend WithEvents txtHora As TextBox
     Friend WithEvents txtFecha As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cboClientes As ComboBox
     Friend WithEvents btnFormNuevoCliente As Button
     Friend WithEvents btnRegistrar As Button
 End Class
