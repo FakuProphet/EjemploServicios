@@ -86,20 +86,22 @@ Partial Class Form1
         '
         'txtHora
         '
+        Me.txtHora.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtHora.Enabled = False
-        Me.txtHora.Location = New System.Drawing.Point(307, 38)
+        Me.txtHora.Location = New System.Drawing.Point(95, 289)
         Me.txtHora.Name = "txtHora"
         Me.txtHora.ReadOnly = True
-        Me.txtHora.Size = New System.Drawing.Size(72, 20)
+        Me.txtHora.Size = New System.Drawing.Size(72, 13)
         Me.txtHora.TabIndex = 7
         '
         'txtFecha
         '
+        Me.txtFecha.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtFecha.Enabled = False
-        Me.txtFecha.Location = New System.Drawing.Point(307, 12)
+        Me.txtFecha.Location = New System.Drawing.Point(17, 289)
         Me.txtFecha.Name = "txtFecha"
         Me.txtFecha.ReadOnly = True
-        Me.txtFecha.Size = New System.Drawing.Size(72, 20)
+        Me.txtFecha.Size = New System.Drawing.Size(72, 13)
         Me.txtFecha.TabIndex = 8
         '
         'Label5

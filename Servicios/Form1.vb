@@ -4,9 +4,20 @@
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         miAcceso.cargarCombo(cboTipoVehiculo, "vehiculos")
         miAcceso.cargarCombo(cboClientes, "clientes")
+        getFechaHora()
+
     End Sub
+
+
+    Private Sub getFechaHora()
+        txtFecha.Text = DateTime.Now.ToString("dd/MM/yyyy")
+        txtHora.Text = DateTime.Now.ToShortTimeString()
+    End Sub
+
+
 
     Private Sub btnRegistrar_Click(sender As Object, e As EventArgs) Handles btnRegistrar.Click
         'A modo de aprendizaje, y por tener pocos clientes, usamos un combo para seleccionar el cliente
