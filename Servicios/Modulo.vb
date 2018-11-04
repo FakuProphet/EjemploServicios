@@ -12,4 +12,9 @@
         Public fecha As String
         Public hora As String
     End Structure
+
+
+
+
+
 End Module
