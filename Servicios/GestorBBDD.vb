@@ -10,6 +10,8 @@ Public Class GestorBBDD
     Dim dReader As OleDbDataReader
     Dim dTable As DataTable
     'Es privada porque solo hacemos uso interno, solo dentro del ambiente de la clase
+    'modificamos la cadena para que pueda operar la base de datos independientemente de donde 
+    'sea ejecutada la aplicación
     Private cadenaDeConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Concesionaria.accdb"
 
 
