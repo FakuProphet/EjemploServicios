@@ -1,4 +1,15 @@
-﻿Public Class Form1
+﻿
+Structure Servicio
+    Public elementoID As Byte 'Guardo el ID
+    Public consultaID As Byte 'Guardo el ID
+    Public cliente As Byte    'Guardo el ID
+    Public telefono As String
+    Public fecha As String
+    Public hora As String
+End Structure
+
+
+Public Class Form1
 
     Private miAcceso As New GestorBBDD
 
