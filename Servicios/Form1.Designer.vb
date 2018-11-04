@@ -24,94 +24,141 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.cboTipoVehiculo = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.rbtCompra = New System.Windows.Forms.RadioButton()
+        Me.rbtVenta = New System.Windows.Forms.RadioButton()
+        Me.txtHora = New System.Windows.Forms.TextBox()
+        Me.txtFecha = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.btnFormNuevoCliente = New System.Windows.Forms.Button()
+        Me.btnRegistrar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'cboTipoVehiculo
         '
         Me.cboTipoVehiculo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboTipoVehiculo.FormattingEnabled = True
-        Me.cboTipoVehiculo.Location = New System.Drawing.Point(162, 121)
+        Me.cboTipoVehiculo.Location = New System.Drawing.Point(167, 146)
         Me.cboTipoVehiculo.Name = "cboTipoVehiculo"
-        Me.cboTipoVehiculo.Size = New System.Drawing.Size(121, 21)
+        Me.cboTipoVehiculo.Size = New System.Drawing.Size(174, 21)
         Me.cboTipoVehiculo.TabIndex = 0
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(30, 124)
+        Me.Label1.Location = New System.Drawing.Point(36, 149)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(87, 13)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Tipo de Vehiculo"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(30, 179)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(37, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Fecha"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(30, 232)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(30, 13)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Hora"
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(30, 77)
+        Me.Label4.Location = New System.Drawing.Point(36, 116)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(82, 13)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Tipo de servicio"
         '
-        'RadioButton1
+        'rbtCompra
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(162, 77)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton1.TabIndex = 5
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RadioButton1"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rbtCompra.AutoSize = True
+        Me.rbtCompra.Checked = True
+        Me.rbtCompra.Location = New System.Drawing.Point(168, 116)
+        Me.rbtCompra.Name = "rbtCompra"
+        Me.rbtCompra.Size = New System.Drawing.Size(61, 17)
+        Me.rbtCompra.TabIndex = 5
+        Me.rbtCompra.TabStop = True
+        Me.rbtCompra.Text = "Compra"
+        Me.rbtCompra.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rbtVenta
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(162, 200)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(90, 17)
-        Me.RadioButton2.TabIndex = 6
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RadioButton2"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rbtVenta.AutoSize = True
+        Me.rbtVenta.Location = New System.Drawing.Point(288, 116)
+        Me.rbtVenta.Name = "rbtVenta"
+        Me.rbtVenta.Size = New System.Drawing.Size(53, 17)
+        Me.rbtVenta.TabIndex = 6
+        Me.rbtVenta.Text = "Venta"
+        Me.rbtVenta.UseVisualStyleBackColor = True
+        '
+        'txtHora
+        '
+        Me.txtHora.Enabled = False
+        Me.txtHora.Location = New System.Drawing.Point(307, 12)
+        Me.txtHora.Name = "txtHora"
+        Me.txtHora.ReadOnly = True
+        Me.txtHora.Size = New System.Drawing.Size(72, 20)
+        Me.txtHora.TabIndex = 7
+        '
+        'txtFecha
+        '
+        Me.txtFecha.Enabled = False
+        Me.txtFecha.Location = New System.Drawing.Point(229, 12)
+        Me.txtFecha.Name = "txtFecha"
+        Me.txtFecha.ReadOnly = True
+        Me.txtFecha.Size = New System.Drawing.Size(72, 20)
+        Me.txtFecha.TabIndex = 8
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(36, 85)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(39, 13)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Cliente"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(167, 82)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(174, 21)
+        Me.ComboBox1.TabIndex = 10
+        '
+        'btnFormNuevoCliente
+        '
+        Me.btnFormNuevoCliente.Location = New System.Drawing.Point(347, 81)
+        Me.btnFormNuevoCliente.Name = "btnFormNuevoCliente"
+        Me.btnFormNuevoCliente.Size = New System.Drawing.Size(32, 23)
+        Me.btnFormNuevoCliente.TabIndex = 11
+        Me.btnFormNuevoCliente.Text = "..."
+        Me.btnFormNuevoCliente.UseVisualStyleBackColor = True
+        '
+        'btnRegistrar
+        '
+        Me.btnRegistrar.Location = New System.Drawing.Point(288, 262)
+        Me.btnRegistrar.Name = "btnRegistrar"
+        Me.btnRegistrar.Size = New System.Drawing.Size(91, 23)
+        Me.btnRegistrar.TabIndex = 12
+        Me.btnRegistrar.Text = "&Registrar"
+        Me.btnRegistrar.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(347, 450)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.ClientSize = New System.Drawing.Size(422, 314)
+        Me.Controls.Add(Me.btnRegistrar)
+        Me.Controls.Add(Me.btnFormNuevoCliente)
+        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.txtFecha)
+        Me.Controls.Add(Me.txtHora)
+        Me.Controls.Add(Me.rbtVenta)
+        Me.Controls.Add(Me.rbtCompra)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cboTipoVehiculo)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Servicio"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -119,9 +166,13 @@ Partial Class Form1
 
     Friend WithEvents cboTipoVehiculo As ComboBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents rbtCompra As RadioButton
+    Friend WithEvents rbtVenta As RadioButton
+    Friend WithEvents txtHora As TextBox
+    Friend WithEvents txtFecha As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents btnFormNuevoCliente As Button
+    Friend WithEvents btnRegistrar As Button
 End Class
