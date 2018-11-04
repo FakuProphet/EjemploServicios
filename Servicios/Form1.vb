@@ -32,4 +32,9 @@
         formAgregarCliente.ShowDialog()
         'mostrar el form en forma modal.
     End Sub
+
+    Private Sub btnActualizar_Click(sender As Object, e As EventArgs) Handles btnActualizar.Click
+        'Actualiza la lista de clientes, cuando agregamos uno que no existia
+        'Por el momento lo trabajamos asi.
+    End Sub
 End Class
