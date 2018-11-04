@@ -1,12 +1,5 @@
 ﻿
-Structure Servicio
-    Public elementoID As Byte 'Guardo el ID
-    Public consultaID As Byte 'Guardo el ID
-    Public cliente As Byte    'Guardo el ID
-    Public telefono As String
-    Public fecha As String
-    Public hora As String
-End Structure
+
 
 
 Public Class Form1
@@ -34,6 +27,10 @@ Public Class Form1
         'A modo de aprendizaje, y por tener pocos clientes, usamos un combo para seleccionar el cliente
         'Al seleccionar un item (cliente en este caso) estaremos registrando e ID que tiene asociado
         'en la base de datos dicho cliente.
+
+
+
+
 
 
     End Sub
