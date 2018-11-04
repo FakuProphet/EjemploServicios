@@ -28,7 +28,7 @@ Public Class GestorBBDD
             'Especifica como se interpretra una cadena de comando
             comando.CommandType = CommandType.Text
 
-            '  MessageBox.Show("Conexión exitosa...")
+            MessageBox.Show("Conexión exitosa...")
         Catch ex As Exception
             MessageBox.Show("Error en la conexión: " + ex.ToString)
         End Try
@@ -108,7 +108,11 @@ Public Class GestorBBDD
 
     End Sub
 
-
+    Public Sub RegistrarNuevoServicio(ByVal servicio As Object)
+        Dim miServicio As Servicio
+        miServicio = CType(servicio, Servicio)
+        'incompleto
+    End Sub
 
 
 End Class
