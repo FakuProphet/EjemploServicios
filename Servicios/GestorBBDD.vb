@@ -10,7 +10,7 @@ Public Class GestorBBDD
     Dim dReader As OleDbDataReader
     Dim dTable As DataTable
     'Es privada porque solo hacemos uso interno, solo dentro del ambiente de la clase
-    Private cadenaDeConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Prophet\Desktop\clon Servicios\EjemploServicios\Concesionaria.accdb"
+    Private cadenaDeConexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + My.Computer.FileSystem.CurrentDirectory + "\Concesionaria.accdb"
 
 
 
@@ -28,7 +28,7 @@ Public Class GestorBBDD
             'Especifica como se interpretra una cadena de comando
             comando.CommandType = CommandType.Text
 
-            MessageBox.Show("Conexión exitosa...")
+            'MessageBox.Show("Conexión exitosa...")
         Catch ex As Exception
             MessageBox.Show("Error al abrir la conexión: " + ex.ToString)
         End Try
