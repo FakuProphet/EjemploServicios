@@ -30,7 +30,7 @@ Public Class GestorBBDD
 
             MessageBox.Show("Conexión exitosa...")
         Catch ex As Exception
-            MessageBox.Show("Error en la conexión: " + ex.ToString)
+            MessageBox.Show("Error al abrir la conexión: " + ex.ToString)
         End Try
     End Sub
 
@@ -101,7 +101,7 @@ Public Class GestorBBDD
             miCombo.DisplayMember = dTable.Columns(1).ColumnName
 
         Catch ex As Exception
-            MessageBox.Show("Error: " + ex.ToString)
+            MessageBox.Show("Error al cargar combo: " + ex.ToString)
         Finally
             conexion.Close()
         End Try
