@@ -1,3 +1,3 @@
 # EjemploServicios
 Conexión y operaciones con base de datos en Access
-Ejemplo para fines educativos, muy basico.
+Ejemplo para fines educativos, muy básico.
